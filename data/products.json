@@ -1,0 +1,121 @@
+[
+  {
+    "id": 1,
+    "SKU": "sku_H9be4oajNY2dmz",
+    "title": "Buffalo Chicken Finger Wrap",
+    "description": "Our delicious Buffalo Chicken Finger Wraps made with buffalo chicken, cheese, and lettuce are one of our best selling items!",
+    "price": 5
+  },
+  {
+    "id": 2,
+    "SKU": "sku_H9be1fTuO0rzRb",
+    "title": "Ham and Brie Wrap",
+    "description": "The Ham and Brie Wrap is a sophisticated taste, but many of our students love it!",
+    "price": 5
+  },
+  {
+    "id": 3,
+    "SKU": "sku_H9bfIyUex2fP6d",
+    "title": "Turkey Wrap",
+    "description": "Turkey Wraps are <span class=\"label label-info\">$5.00 each</span>",
+    "price": 5
+  },
+  {
+    "id": 4,
+    "SKU": "4",
+    "title": "Roast Beef on 7 Grain Wrap",
+    "description": "Roast Beef on 7 Grain Wraps are <span class=\"label label-info\">$5.00 each</span>",
+    "price": 5
+  },
+  {
+    "id": 5,
+    "SKU": "5",
+    "title": "Pasta Salad",
+    "description": "Pasta Salads are <span class=\"label label-info\">$2.00 each</span>",
+    "price": 2
+  },
+  {
+    "id": 6,
+    "SKU": "6",
+    "title": "Caesar Salad",
+    "description": "Caesar Salads are <span class=\"label label-info\">$5.00 each</span>",
+    "price": 2
+  },
+  {
+    "id": 7,
+    "SKU": "7",
+    "title": "Special Salad with Grilled Chicken",
+    "description": "Special Salads with Grilled Chicken are <span class=\"label label-info\">$5.00 each</span>",
+    "price": 5
+  },
+  {
+    "id": 8,
+    "SKU": "8",
+    "title": "Chips with Guacamole",
+    "description": "Chips with Guacamole are <span class=\"label label-info\">$2.00 each</span>",
+    "price": 2
+  },
+  {
+    "id": 9,
+    "SKU": "9",
+    "title": "Rice Pudding",
+    "description": "Rice Puddings are <span class=\"label label-info\">$1.00 each</span>",
+    "price": 1
+  },
+  {
+    "id": 10,
+    "SKU": "10",
+    "title": "Brownies and Cookies",
+    "description": "Brownies and Cookies are <span class=\"label label-info\">$2.00 each</span>",
+    "price": 2
+  },
+  {
+    "id": 11,
+    "SKU": "11",
+    "title": "Creme Brulee",
+    "description": "Creme Brulees are <span class=\"label label-info\">$2.00 each</span>",
+    "price": 2
+  },
+  {
+    "id": 12,
+    "SKU": "12",
+    "title": "Oreo Chocolate Mousse",
+    "description": "Oreo Chocolate Mousses are <span class=\"label label-info\">$3.00 each</span>",
+    "price": 3
+  },
+  {
+    "id": 13,
+    "SKU": "13",
+    "title": "Fruit Salad",
+    "description": "Fruit Salads are <span class=\"label label-info\">$3.00 each</span>",
+    "price": 3
+  },
+  {
+    "id": 14,
+    "SKU": "14",
+    "title": "Yogurt Parfait",
+    "description": "Yogurt Parfaits are <span class=\"label label-info\">$3.00 each</span>",
+    "price": 3
+  },
+  {
+    "id": 15,
+    "SKU": "15",
+    "title": "Chips",
+    "description": "Chips are <span class=\"label label-info\">$1.00 each</span>",
+    "price": 1
+  },
+  {
+    "id": 16,
+    "SKU": "16",
+    "title": "Water Bottle",
+    "description": "Water Bottles are <span class=\"label label-info\">$1.00 each</span>",
+    "price": 1
+  },
+  {
+    "id": 17,
+    "SKU": "17",
+    "title": "Bubble Tea",
+    "description": "Bubble Teas are <span class=\"label label-info\">$2.00 each</span>",
+    "price": 2
+  }
+]
