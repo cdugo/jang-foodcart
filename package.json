@@ -9,12 +9,16 @@
     "start_azure_debug": "if [[ ${APPSVC_TUNNEL_PORT} != \"\" ]]; then node --inspect=0.0.0.0:$APPSVC_TUNNEL_PORT ./bin/www; else npm run start; fi"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.3",
     "express": "^4.16.4",
     "express-session": "^1.15.3",
+    "express-validator": "^6.4.0",
     "hbs": "^4.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.10",
     "morgan": "^1.9.1",
     "serve-favicon": "~2.4.2",
     "stripe": "^8.46.0"

@@ -4,11 +4,14 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
+const InitiateMongoServer = require("./config/db");
 var hbs = require('hbs');
 var session = require('express-session');
+var user = require('./routes/user')
 
 var index = require('./routes/index');
+
+InitiateMongoServer();
 
 var app = express();
 
@@ -37,6 +40,7 @@ app.use(function(req, res, next) {
 });
 
 app.use('/', index);
+app.use("/user", user);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -44,6 +48,8 @@ app.use(function(req, res, next) {
   err.status = 404;
   next(err);
 });
+
+
 
 // error handler
 app.use(function(err, req, res, next) {

@@ -1,7 +1,8 @@
 var express = require('express');
 var router = express.Router();
-
+var auth = require('../middleware/auth')
 var fs = require('fs');
+
 
 var Cart = require('../utilities/cart');
 var products = require('../data/products.json');
@@ -17,7 +18,7 @@ router.get('/', function (req, res, next) {
   );
 });
 
-router.get('/add/:id', function(req, res, next) {
+router.get('/add/:id', auth,  function(req, res, next) {
 
   var productId = req.params.id;
   var cart = new Cart(req.session.cart ? req.session.cart : {});
@@ -28,7 +29,7 @@ router.get('/add/:id', function(req, res, next) {
   inline();
 });
 
-router.get('/cart', function(req, res, next) {
+router.get('/cart', auth,function(req, res, next) {
   if (!req.session.cart) {
     return res.render('cart', {
       products: null
@@ -69,5 +70,13 @@ router.get('/cart/skus', (request, response, next) => {
 
   response.json(SKUsAndQuantities)
 });
-
+router.get("/me", auth, async (req, res) => {
+  try {
+    // request.user is getting fetched from Middleware after token authentication
+    const user = await User.findById(req.user.id);
+    res.json(user);
+  } catch (e) {
+    res.send({ message: "Error in Fetching user" });
+  }
+});
 module.exports = router;
