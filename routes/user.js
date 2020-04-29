@@ -1,9 +1,9 @@
 const express = require("express");
 const { check, validationResult} = require("express-validator");
 const bcrypt = require("bcryptjs");
-const jwt = require("jsonwebtoken");
 const router = express.Router();
 const auth = require("../middleware/auth");
+
 
 const User = require("../config/User");
 
@@ -41,6 +41,7 @@ router.post(
             let user = await User.findOne({
                 email
             });
+          
             if (user) {
                 return res.status(400).json({
                     msg: "User Already Exists"
@@ -58,24 +59,11 @@ router.post(
 
             await user.save();
 
-            const payload = {
-                user: {
-                    id: user.id
-                }
-            };
+            req.session.user = {
+              id: user.id
+            }
 
-            jwt.sign(
-                payload,
-                "randomString", {
-                    expiresIn: 10000
-                },
-                (err, token) => {
-                    if (err) throw err;
-                    res.status(200).json({
-                        token
-                    });
-                }
-            ); res.redirect('/')
+            res.redirect('/')
         } catch (err) {
             console.log(err.message);
             res.status(500).send("Error in Saving");
@@ -116,25 +104,13 @@ router.post(
             message: "Incorrect Password !"
           });
   
-        const payload = {
-          user: {
-            id: user.id
-          }
+        req.session.user = {
+          id: user.id
         };
-  
-        jwt.sign(
-          payload,
-          "secret",
-          {
-            expiresIn: 3600
-          },
-          (err, token) => {
-            if (err) throw err;
-            res.status(200).json({
-              token
-            });
-          }
-        ); res.redirect('/');
+
+        
+        
+        res.redirect('/');
       } catch (e) {
         console.error(e);
         res.status(500).json({

@@ -3,14 +3,14 @@
     "id": 1,
     "SKU": "sku_H9be4oajNY2dmz",
     "title": "Buffalo Chicken Finger Wrap",
-    "description": "Our delicious Buffalo Chicken Finger Wraps made with buffalo chicken, cheese, and lettuce are one of our best selling items!",
+    "description": "Our delicious Buffalo Chicken Finger Wraps!",
     "price": 5
   },
   {
     "id": 2,
     "SKU": "sku_H9be1fTuO0rzRb",
     "title": "Ham and Brie Wrap",
-    "description": "The Ham and Brie Wrap is a sophisticated taste, but many of our students love it!",
+    "description": "The Ham and Brie Wrap!",
     "price": 5
   },
   {
@@ -44,8 +44,8 @@
   {
     "id": 7,
     "SKU": "7",
-    "title": "Special Salad with Grilled Chicken",
-    "description": "Special Salads with Grilled Chicken are <span class=\"label label-info\">$5.00 each</span>",
+    "title": "Salad w/ Grilled Chicken",
+    "description": "Special Salads are <span class=\"label label-info\">$5.00 each</span>",
     "price": 5
   },
   {

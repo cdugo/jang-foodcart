@@ -26,17 +26,17 @@ router.get('/register', function (req, res, next) {
   });
 });
 
-router.get('/add/:id', auth,  function(req, res, next) {
+router.get('/add/:id', auth, function(req, res, next) {
   var productId = req.params.id;
   var cart = new Cart(req.session.cart ? req.session.cart : {});
   var product = products.find((item) => item.id == productId);
   cart.add(product, productId);
   req.session.cart = cart;
-  res.redirect('/');
-  inline();
+
+  return res.redirect('/');
 });
 
-router.get('/cart', auth,function(req, res, next) {
+router.get('/cart', auth, function(req, res, next) {
   if (!req.session.cart) {
     return res.render('cart', {
       products: null
