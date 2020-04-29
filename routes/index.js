@@ -53,7 +53,7 @@ router.get('/remove/:id', function(req, res, next) {
 });
 
 router.get('/cart/skus', auth, (request, response, next) => {
-  try {
+  
   var cart = new Cart(request.session.cart ? request.session.cart : {}),
     items = cart.items;
 
@@ -71,12 +71,6 @@ router.get('/cart/skus', auth, (request, response, next) => {
 
   response.json(SKUsAndQuantities)
 
-  } catch (error) {
-    console.log(error.statusCode);
-    if (error.statusCode == 401) {
-     res.redirect('/login')}
-    else {(console.log(error))};
-};
 });
 router.get("/me", auth, async (req, res) => {
   try {
