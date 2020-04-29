@@ -1,18 +1,18 @@
 <h1>{{title}}</h1>
 <p>Welcome to the {{title}}</p>
-
+<div class="row">
 {{# each products }}
-  <div class="row">
-      <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+      <div class="col xl4 l4 m4 s6">
           <div class="card" style="text-align: center;margin: 20px;padding:20px;font-family: Montserrat;border-radius: 10px;border: 2px #999999 solid;">
               <p style="font-size:18px;font-weight:600;">{{ this.title }}</p>
               <p style="font-size:12px;font-weight:500;">{{{this.description}}}</p>
-              <p style="display:inline;font-weight:600;font-size:12px;color:#212121">
-                  <div class="price pull-left"><i class="fa fa-tag" aria-hidden="true"></i> ${{ this.price }}.00 </div>
-                      <a href="/add/{{ this.id }}" class="btn btn-default pull-right" role="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
-                  </div>
-              </p>
+                <div class="price" style="margin-bottom: 10px;">
+                    <i class="fa fa-tag" aria-hidden="true"></i> ${{ this.price }}.00 
+                </div>
+                <div>
+                  <a href="/add/{{ this.id }}" class="btn btn-default " role="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+                </div>
           </div>
       </div>
-  </div>
 {{/each}}
+</div>

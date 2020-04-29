@@ -17,9 +17,16 @@ router.get('/', function (req, res, next) {
   }
   );
 });
+router.get('/login', function (req, res, next) {
+  return res.render('login', {
+  });
+});
+router.get('/register', function (req, res, next) {
+  return res.render('signup', {
+  });
+});
 
 router.get('/add/:id', auth,  function(req, res, next) {
-
   var productId = req.params.id;
   var cart = new Cart(req.session.cart ? req.session.cart : {});
   var product = products.find((item) => item.id == productId);

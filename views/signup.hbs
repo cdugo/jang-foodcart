@@ -1,19 +1,20 @@
 <div class="row mt-5">
-  <div class="col-md-6 m-auto">
-    <div class="card card-body">
+  <div class="col s10 m6 l6 xl6 offset-s1 offset-m3 offset-l3 offset-xl3">
+    <div class="card row">
+      <div class="col s10 m10 l10 xl10 offset-s1 offset-m1 offset-l1 offset-xl1">
       <h1 class="text-center mb-3">
-        <i class="fas fa-user-plus"></i> Register
+        Register
       </h1>
       <form action="/users/register" method="POST">
         <div class="form-group">
           <label for="name">Name</label>
           <input
-            type="name"
+            type="text"
             id="name"
             name="name"
             class="form-control"
             placeholder="Enter Name"
-            value="<%= typeof name != 'undefined' ? name : '' %>"
+            value=""
           />
         </div>
         <div class="form-group">
@@ -49,11 +50,12 @@
             value=""
           />
         </div>
-        <button type="submit" class="btn btn-primary btn-block">
-          Register
-        </button>
+        <div class="row" style="margin-top:20px;">
+          <button type="submit" class="waves-effect waves-light btn col s12 m12 l12 xl12">Register</button>
+        </div>
       </form>
-      <p class="lead mt-4">Have An Account? <a href="/users/login">Login</a></p>
+      <p class="lead mt-4">Have An Account? <a href="/login">Login</a></p>
+    </div>
     </div>
   </div>
 </div>
