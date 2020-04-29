@@ -5,13 +5,13 @@
       <h1 class="text-center mb-3">
         Register
       </h1>
-      <form action="/users/register" method="POST">
+      <form action="/user/signup/" method="POST">
         <div class="form-group">
-          <label for="name">Name</label>
+          <label for="username">Name</label>
           <input
             type="text"
-            id="name"
-            name="name"
+            id="username"
+            name="username"
             class="form-control"
             placeholder="Enter Name"
             value=""
@@ -51,7 +51,7 @@
           />
         </div>
         <div class="row" style="margin-top:20px;">
-          <button type="submit" class="waves-effect waves-light btn col s12 m12 l12 xl12">Register</button>
+          <button type="submit" formmethod="post" class="waves-effect waves-light btn col s12 m12 l12 xl12">Register</button>
         </div>
       </form>
       <p class="lead mt-4">Have An Account? <a href="/login">Login</a></p>
