@@ -52,9 +52,9 @@ router.get('/remove/:id', function(req, res, next) {
   res.redirect('/cart');
 });
 
-router.get('/cart/skus', auth, (request, response, next) => {
-  
-  var cart = new Cart(request.session.cart ? request.session.cart : {}),
+router.get('/cart/skus', auth, (req, res, next) => {
+  try {
+    var cart = new Cart(req.session.cart ? req.session.cart : {}),
     items = cart.items;
 
   const SKUsAndQuantities = [];
@@ -67,9 +67,15 @@ router.get('/cart/skus', auth, (request, response, next) => {
     SKUsAndQuantities.push({sku: item.sku, quantity: item.quantity});
   }
 
-  delete request.session.cart;
+  delete req.session.cart;
 
-  response.json(SKUsAndQuantities)
+  res.json(SKUsAndQuantities)
+  } catch (error) {
+    console.log(error)
+    res.redirect('/login')
+  }
+  
+  
 
 });
 router.get("/me", auth, async (req, res) => {
