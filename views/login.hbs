@@ -1,8 +1,9 @@
 <div class="row mt-5">
-  <div class="col-md-6 m-auto">
-    <div class="card card-body">
+  <div class="col m6 s10 offset-s1 offset-m3">
+    <div class="row card">
+      <div class="col s10 m10 l10 xl10 offset-s1 offset-m1 offset-l1 offset-xl1">
       <h1 class="text-center mb-3"><i class="fas fa-sign-in-alt"></i>  Login</h1>
-      <form action="/users/login" method="POST">
+      <form action="/user/login/" method="POST">
         <div class="form-group">
           <label for="email">Email</label>
           <input
@@ -23,11 +24,15 @@
             placeholder="Enter Password"
           />
         </div>
-        <button type="submit" class="btn btn-primary btn-block">Login</button>
+        {{ error}}
+        <div class="row" style="margin-top:20px;">
+          <button type="submit" formmethod="post" class="waves-effect waves-light btn col s12 m12 l12 xl12">Login</button>
+        </div>
       </form>
       <p class="lead mt-4">
-        No Account? <a href="/users/register">Register</a>
+        No Account? <a href="/register">Register</a>
       </p>
+    </div>
     </div>
   </div>
 </div>

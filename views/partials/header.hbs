@@ -1,12 +1,12 @@
 <div class="row">
     <div class="col-xs-4">
         <div class="pull-left">
-        <a href="/"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+        <a class="waves-effect waves-light btn" href="/"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
         </div>
     </div>
     <div class="col-xs-8">
         <div class="dropdown pull-right">
-            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <a class="waves-effect waves-light btn" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                 <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart
                 {{# if session.cart.totalItems }}
                 <span>({{session.cart.totalItems}})</span>
@@ -31,7 +31,7 @@
                     <div class="row">
                         <div class="text-right">
                             <div class="totalPrice">Total: ${{ session.cart.totalPrice }}.00 </div>
-                            <a href="/cart/" class="btn btn-success">Procceed</a>
+                            <a class="waves-effect waves-light btn" href="/cart/" >Proceed</a>
                         </div>
                     </div>
                 </div>
