@@ -1,10 +1,10 @@
-<h1>{{title}}</h1>
-<p>Welcome to the {{title}} ordering service, JANG!</p>
+<h1 style="font-size: 32px">{{title}}</h1>
+<p style="font-size: 20px!important">Welcome to the {{title}} ordering service, JANG!</p>
 <div class="row">
 {{# each products }}
-      <div class="col xl4 l4 m4 s6">
+      <div class="col xl4 l4 m6 s6 xs6">
           <div class="card" style="text-align: center;margin: 20px;padding:20px;font-family: Montserrat;border-radius: 10px;border: 2px #999999 solid;">
-              <p style="font-size:18px;font-weight:600;">{{ this.title }}</p>
+              <p style="font-size:20px;font-weight:600;">{{ this.title }}</p>
               <p style="font-size:12px;font-weight:500;">{{{this.description}}}</p>
                 <div class="price" style="margin-bottom: 10px;">
                     <i class="fa fa-tag" aria-hidden="true"></i> ${{ this.price }}.00 

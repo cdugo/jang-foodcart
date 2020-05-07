@@ -14,10 +14,13 @@ a {
 }
 
 .dropdown-menu .cart {
+  display: none;
   min-width: 250px;
   padding: 15px 25px 0;
 }
-
+.dropdown-menu.active .cart {
+  display: block;
+}
 .dropdown-menu .cart .row > div {
   padding: 0 0 10px 0;
 }
