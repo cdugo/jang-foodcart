@@ -20,7 +20,7 @@ const checkout = async () => {
     stripe
     .redirectToCheckout({
       items: await getCartItems(),
-      successUrl: window.location.origin + "/success?session_id={CHECKOUT_SESSION_ID}",
+      successUrl: window.location.origin + "/confirmation",
       cancelUrl: window.location.origin + "/canceled?session_id={CHECKOUT_SESSION_ID}"
     })
     .then(handleResult);

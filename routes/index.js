@@ -85,6 +85,11 @@ router.get('/cart/skus', auth, (req, res, next) => {
   
 
 });
+router.get("/confirmation", function (req, res) {
+  return res.render('confirmation', {})
+})
+
+
 router.get("/me", auth, async (req, res) => {
   try {
     // request.user is getting fetched from Middleware after token authentication

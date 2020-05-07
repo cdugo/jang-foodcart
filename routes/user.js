@@ -140,5 +140,8 @@ router.get("/logout", auth, async (req, res) =>{
     res.send({message: 'bro sign in lol'})
   }
 })
+router.get("/confirmation", auth, async (req, res)=> {
+  res.render('confirmation', {})
+})
 
 module.exports = router;
