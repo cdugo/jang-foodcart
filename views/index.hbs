@@ -1,5 +1,5 @@
 <h1 style="font-size: 32px">{{title}}</h1>
-<p style="font-size: 20px!important">Welcome to the {{title}} ordering service, JANG!</p>
+<p style="font-size: 20px!important">Welcome {{session.user.username}} to the {{title}} ordering service, JANG!</p>
 <div class="row">
 {{# each products }}
       <div class="col xl4 l4 m6 s6 xs6">
@@ -16,3 +16,4 @@
       </div>
 {{/each}}
 </div>
+

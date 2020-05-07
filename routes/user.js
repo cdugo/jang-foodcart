@@ -105,7 +105,8 @@ router.post(
           });
   
         req.session.user = {
-          id: user.id
+          id: user.id,
+          username: user.username
         };
 
         
