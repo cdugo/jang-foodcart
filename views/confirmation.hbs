@@ -1,4 +1,53 @@
-<h1 class="mt-4">Confirmation</h1>
-<p class="lead mb-3">Welcome {{username}}</p>
-<p class="lead mb-4">Your order has been successfully placed!</p>
-<p class="lead mt-4"><a href="/index">Return to Homepage</a> </p>
+<head>
+    <meta charset="utf-8" />
+    <title>Jang Map Sample</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 20%;
+            height: 40%;
+        }
+
+        .marker {
+            background-image: url('mapbox-icon.png');
+            background-size: cover;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .mapboxgl-popup {
+            max-width: 200px;
+        }
+
+        .mapboxgl-popup-content {
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map">
+    <div class="marker">Techlife Cafe</div>
+    <style>
+        .mapboxgl-popup {
+        max-width: 400px;
+        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        }
+    </style>
+    </div>
+    <script src="../mapbox/map.js"></script>
+
+</body>

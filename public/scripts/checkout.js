@@ -21,7 +21,7 @@ const checkout = async () => {
     .redirectToCheckout({
       items: await getCartItems(),
       successUrl: window.location.origin + "/confirmation",
-      cancelUrl: window.location.origin + "/canceled?session_id={CHECKOUT_SESSION_ID}"
+      cancelUrl: window.location.origin + "/"
     })
     .then(handleResult);
 }

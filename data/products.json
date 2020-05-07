@@ -2,7 +2,7 @@
   {
     "id": 1,
     "SKU": "sku_H9be4oajNY2dmz",
-    "title": "Buffalo Chicken Finger Wrap",
+    "title": "Buffalo Chicken Wrap",
     "description": "Our delicious Buffalo Chicken Finger Wraps!",
     "price": 5
   },
@@ -14,16 +14,9 @@
     "price": 5
   },
   {
-    "id": 3,
-    "SKU": "sku_H9bfIyUex2fP6d",
-    "title": "Turkey Wrap",
-    "description": "Turkey Wraps are <span class=\"label label-info\">$5.00 each</span>",
-    "price": 5
-  },
-  {
     "id": 4,
     "SKU": "4",
-    "title": "Roast Beef on 7 Grain Wrap",
+    "title": "Roast Beef Wrap",
     "description": "Roast Beef on 7 Grain Wraps are <span class=\"label label-info\">$5.00 each</span>",
     "price": 5
   },
