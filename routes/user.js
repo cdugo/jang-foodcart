@@ -130,4 +130,15 @@ router.get("/me", auth, async (req, res) => {
   }
 });
 
+router.get("/logout", auth, async (req, res) =>{
+  try {
+    
+    await req.session.destroy()
+    
+    await res.redirect('/')
+  } catch(err){
+    res.send({message: 'bro sign in lol'})
+  }
+})
+
 module.exports = router;
