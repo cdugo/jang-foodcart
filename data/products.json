@@ -3,21 +3,21 @@
     "id": 1,
     "SKU": "sku_H9be4oajNY2dmz",
     "title": "Buffalo Chicken Wrap",
-    "description": "Our delicious Buffalo Chicken Finger Wraps!",
+    "description": "Buffalo Chicken Wraps are <span class=\"label label-info\">$5.00 each</span>",
     "price": 5
   },
   {
     "id": 2,
     "SKU": "sku_H9be1fTuO0rzRb",
     "title": "Ham and Brie Wrap",
-    "description": "The Ham and Brie Wrap!",
+    "description": "Ham and Brie Wraps are <span class=\"label label-info\">$5.00 each</span>",
     "price": 5
   },
   {
     "id": 4,
     "SKU": "4",
     "title": "Roast Beef Wrap",
-    "description": "Roast Beef on 7 Grain Wraps are <span class=\"label label-info\">$5.00 each</span>",
+    "description": "Roast Beef Wraps are <span class=\"label label-info\">$5.00 each</span>",
     "price": 5
   },
   {
@@ -31,7 +31,7 @@
     "id": 6,
     "SKU": "6",
     "title": "Caesar Salad",
-    "description": "Caesar Salads are <span class=\"label label-info\">$5.00 each</span>",
+    "description": "Caesar Salads are <span class=\"label label-info\">$2.00 each</span>",
     "price": 2
   },
   {
